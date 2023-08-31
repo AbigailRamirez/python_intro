@@ -52,6 +52,7 @@ buttered_toast = Recipe(
     cooking_time = 4
 )
 
+
 recipe_to_be_deleted = session.query(Recipe).filter(Recipe.name == 'Buttered Toast').one()
 
 session.delete(recipe_to_be_deleted)
